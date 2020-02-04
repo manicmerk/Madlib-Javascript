@@ -1,6 +1,12 @@
-var noun1 = prompt("What is the first noun you'd like to use?");
-var verb1 = prompt("What is the first verb you'd like to use?");
-var adjective1 = prompt("What is the first adjective you'd like to use?");
+var questions = 3
+var questionsLeft = ' [' + questions + ' questions left]';
+var noun1 = prompt("What is the noun you'd like to use?" + questionsLeft);
+questions -= 1;
+questionsLeft = ' [' + questions + ' questions left]';
+var verb1 = prompt("What is the verb you'd like to use?" + questionsLeft);
+questions -= 1;
+questionsLeft = ' [' + questions + ' questions left]';
+var adjective1 = prompt("What is the adjective you'd like to use?" + questionsLeft);
 console.log(noun1);
 console.log(verb1);
 console.log(adjective1);
